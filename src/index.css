@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-width: 320px;
+}
+
+@keyframes menu-slide-next {
+	from { opacity: 0.72; filter: blur(1px); }
+	to { opacity: 1; filter: blur(0); }
+}
+
+@keyframes menu-slide-previous {
+	from { opacity: 0.72; filter: blur(1px); }
+	to { opacity: 1; filter: blur(0); }
+}
+
+.menu-slide-next {
+	animation: menu-slide-next 220ms ease-out;
+}
+
+.menu-slide-previous {
+	animation: menu-slide-previous 220ms ease-out;
+}
